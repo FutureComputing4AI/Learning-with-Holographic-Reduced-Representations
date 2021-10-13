@@ -1,0 +1,24 @@
+name: Wiki10-31K-spn
+
+train:
+  texts: data/Wiki10-31K/train_texts.npy
+  labels: data/Wiki10-31K/train_labels.npy
+
+valid:
+  size: 200
+
+test:
+  texts: data/Wiki10-31K/test_texts.npy
+
+embedding:
+  emb_init: data/Wiki10-31K/emb_init.npy
+
+output:
+  res: results
+
+labels_binarizer: data/Wiki10-31K/labels_binarizer
+
+use_spn: True
+
+model:
+  emb_size: 300

@@ -1,0 +1,24 @@
+name: AttentionXML
+
+model:
+  hidden_size: 256
+  layers_num: 1
+  linear_size: [256, 256]
+  dropout: 0.5
+  emb_trainable: False
+  spn_dim: False
+  no_grad: False
+  without_negative: False
+
+train:
+  batch_size: 8
+  nb_epoch: 30
+  swa_warmup: 4
+
+valid:
+  batch_size: 8
+
+predict:
+  batch_size: 8
+
+path: models
